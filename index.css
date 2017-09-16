@@ -1,6 +1,10 @@
 * {
   margin: 0;
 }
+
+body {
+  background-color: rgb(184, 154, 82);
+}
  /* top bar */
 .titleSec {
   background: linear-gradient(rgba(13, 55, 68,1) 0px, rgba(13, 55, 68,1) 100px, rgba(0,0,0,.2) 100%),
@@ -61,46 +65,78 @@
   padding-left: 20px;
 }
 
-/* skills */
+/*about*/
 .textS {
   text-align: center;
 }
 
 .aboutSec {
-  background-color: rgb(184, 154, 82);
+  background-color: rgb(149, 119, 46);
 }
 .aboutSec .textS {
-  padding: 40px;
+  padding: 50px;
   padding-bottom: 140px;
   color: white;
   font-size: 1.5em;
 }
-.aboutSec .textS:nth-child(3) {
-  padding-top: 120px;
-  background-color: rgb(149, 119, 46);
-}
 
-.aboutSec .skills {
-  position: absolute;
-  width: 100%;
+/* skills */
+.skills {
+  max-width: 1000px;
+  margin: 0px auto;
   margin-top: -90px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
-.aboutSec .skills .skillsCont .imgCont {
-  position:relative;
+.skills .skillsCont {
+  margin: 0 2% 0 2%;
+}
+.skills .skillsCont .imgCont {
+  text-align: center;
   border-radius: 50%;
-  background-color: rgb(149, 119, 46);
+  background-color: rgb(184, 154, 82);
   height: 150px;
   width: 150px;
   overflow: hidden;
-  margin: 7px;
-  border: 8px solid rgb(149,119,46);
+  margin: 0px auto;
+  border: 8px solid rgb(184, 154, 82);
 }
-.aboutSec .skills .skillsCont .imgCont img {
+.skills .skillsCont .imgCont img {
   width: 100%;
 }
-
+.skillsTitle {
+  font-size: 1.3em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
 .skillsText {
   text-align: center;
+}
+
+/*previous works*/
+.prevWorks {
+  padding: 50px 10px 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  background-color: rgb(149, 119, 46);
+}
+.worksCont {
+  box-sizing: border-box;
+  display: block;
+  background-color: #0D3744;
+  height: 200px;
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 2px;
+}
+
+/*contact*/
+
+.contactSec {
+  padding: 50px 10px 50px 10px;
 }

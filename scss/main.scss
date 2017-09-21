@@ -1,0 +1,17 @@
+@import "modules/colors.scss";
+@import "modules/fonts.scss";
+
+@import "parts/splash.scss";
+@import "parts/titlebar.scss";
+@import "parts/about.scss";
+@import "parts/skills.scss";
+@import "parts/prevworks.scss";
+@import "parts/contact.scss";
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $color5;
+}

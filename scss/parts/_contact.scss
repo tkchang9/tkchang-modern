@@ -1,0 +1,23 @@
+.contactSec {
+  padding: 50px 10px 50px 10px;
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: $duru;
+    font-size: 2em;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    color: #CFCFCF;
+    background-color: $color3;
+    transition: all 0.2s linear;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 0 3px 3px #974C4F;
+      color: #F1F1F1;
+      }
+    }
+  }
+  

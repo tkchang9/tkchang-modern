@@ -104,7 +104,12 @@ body {
   border: 8px solid rgb(184, 154, 82);
 }
 .skills .skillsCont .imgCont img {
-  width: 100%;
+  width: 70%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .skillsTitle {
   font-size: 1.3em;

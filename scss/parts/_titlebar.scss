@@ -1,0 +1,30 @@
+.topBar {
+  font-family: $lato;
+  background-color: $color1;
+  display: flex;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  li {
+    list-style: none;
+    display: inline;
+  }
+}
+
+.menuBar {
+  margin-left: -20px;
+  li {
+    margin: 10px;
+    padding: 2px;
+    &:hover {
+      background-color: white;
+      color: $color1;
+      border-radius: 3px;
+    }
+  }
+}
+
+.socialMedia {
+  margin-left: auto;
+  padding-right: 30px;
+}

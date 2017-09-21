@@ -1,0 +1,14 @@
+.textS {
+  font-family: $opensans;
+  text-align: center;
+  }
+  
+.aboutSec {
+  background: linear-gradient(black, $color2);
+  .textS {
+      padding: 50px;
+      padding-bottom: 140px;
+      color: $color5;
+      font-size: 1.5em;
+    }
+  }

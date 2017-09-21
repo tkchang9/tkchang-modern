@@ -1,0 +1,29 @@
+.titleSec {
+  background: linear-gradient($color1 0px, $color1 100px, rgba(0,0,0,.2) 90%, black 100%),
+    url("../assets/bg_img.jpg");
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.splashSec {
+  display: flex;
+  align-items: center;
+}
+.titleText {
+  font-family: $duru;
+  color: white;
+  font-size: 4em;
+  margin-left: auto;
+  text-align: right;
+}
+.titleText .subtText {
+  font-family: $lato;
+  font-size: .4em;
+}
+.titleImg {
+  margin-right: auto;
+  img {
+    max-height: 500px;
+    padding-left: 20px;
+  }
+}

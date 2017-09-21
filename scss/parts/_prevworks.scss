@@ -1,0 +1,19 @@
+.prevWorks {
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    background-color: $color1;
+  }
+  .worksCont {
+    box-sizing: border-box;
+    display: block;
+    background-color: $beigeBase;
+    height: 200px;
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 2px;
+  }
+  

@@ -35,21 +35,33 @@
   .topBar li {
     list-style: none;
     display: inline; }
+    .topBar li a {
+      text-decoration: none;
+      color: inherit; }
 
 .menuBar {
   margin-left: -20px; }
-  .menuBar li {
+  .menuBar li a {
     margin: 10px;
     padding: 2px;
     transition: all 0.2s ease; }
-    .menuBar li:hover {
+    .menuBar li a:hover {
       background-color: white;
       color: #526f97;
       border-radius: 3px; }
+  .menuBar .active {
+    text-decoration: underline; }
 
 .socialMedia {
   margin-left: auto;
   padding-right: 30px; }
+  .socialMedia .github {
+    height: 32px;
+    width: 32px;
+    background-image: url("../assets/github.png");
+    transition: all 0.2s ease; }
+    .socialMedia .github:hover {
+      background-image: url("../assets/github_hover.png"); }
 
 .textS {
   font-family: "Open Sans", sans-serif;

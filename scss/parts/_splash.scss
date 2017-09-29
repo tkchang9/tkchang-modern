@@ -6,8 +6,12 @@
 }
 
 .splashSec {
+  padding-top: $top-bar-size;
   display: flex;
   align-items: center;
+  @media #{$size-change} {
+    flex-wrap: wrap;
+  }
 }
 .titleText {
   font-family: $duru;
@@ -15,6 +19,12 @@
   font-size: 4em;
   margin-left: auto;
   text-align: right;
+  @media #{$size-change} {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+  }
 }
 .titleText .subtText {
   font-family: $lato;
@@ -22,6 +32,12 @@
 }
 .titleImg {
   margin-right: auto;
+  @media #{$size-change} {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+  }
   img {
     max-height: 500px;
     padding-left: 20px;

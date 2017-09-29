@@ -6,9 +6,16 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
+    @media #{$size-change} {
+      margin-top: 0;
+      display: block;
+    }
   }
 .skillsCont {
     margin: 0 2% 0 2%;
+    @media #{$size-change} {
+      margin: 2% 7% 2% 7%;
+    }
     .imgCont {
         text-align: center;
         border-radius: 50%;
@@ -18,13 +25,24 @@
         overflow: hidden;
         margin: 0px auto;
         border: 8px solid $color5;
+        @media #{$size-change} {
+          display: inline-block;
+          width: 40%;
+          height: auto;
+          overflow: visible;
+        }
         img {
             width: 70%;
+            height: auto;
             position: relative;
             top: 50%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+            @media #{$size-change} {
+              top: 0;
+              transform: none;
+            }
           }
       }
   }
@@ -33,8 +51,16 @@
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 10px;
+    @media #{$size-change} {
+      display: block;
+      font-size: 1.7em;
+    }
   }
   .skillsText {
     font-family: $lato;
     text-align: center;
+    @media #{$size-change} {
+      display: inline;
+      font-size: 1.2em;
+    }
   }

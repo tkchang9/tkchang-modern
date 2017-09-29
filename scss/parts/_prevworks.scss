@@ -11,9 +11,12 @@
     display: block;
     background-color: $beigeBase;
     height: 200px;
-    flex-basis: 30%;
+    flex-basis: 40%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 2px;
+    @media #{$size-change} {
+      flex-basis: 60%;
+    }
   }
   

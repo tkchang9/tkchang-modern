@@ -10,5 +10,8 @@
       padding-bottom: 140px;
       color: $color5;
       font-size: 1.5em;
+      @media #{$size-change} {
+        padding-bottom: 90px;
+      }
     }
   }

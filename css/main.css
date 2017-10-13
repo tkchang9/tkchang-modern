@@ -27,19 +27,24 @@
 
 .titleText .subtText {
   font-family: "Lato", sans-serif;
-  font-size: .4em; }
+  font-size: .4em;
+  margin: 5px; }
 
 .titleImg {
   margin-right: auto; }
   @media only screen and (max-width: 756px) {
     .titleImg {
-      flex-basis: 100%;
+      margin: auto;
+      flex-basis: 80%;
       flex-shrink: 0;
-      flex-grow: 0;
-      text-align: center; } }
+      flex-grow: 0; } }
   .titleImg img {
     max-height: 500px;
     padding-left: 20px; }
+    @media only screen and (max-width: 756px) {
+      .titleImg img {
+        padding-left: 0;
+        max-width: 100%; } }
 
 .topBar {
   position: fixed;
@@ -74,8 +79,20 @@
       background-color: white;
       color: #526f97;
       border-radius: 3px; }
-  .menuBar .active {
-    text-decoration: underline; }
+  @media only screen and (max-width: 756px) {
+    .menuBar li:not(:first-child) {
+      display: none; } }
+  .menuBar.responsive li:not(:first-child) {
+    display: block;
+    padding: .5em; }
+  .menuBar .menuIcon {
+    font-size: 1.3em;
+    display: none; }
+    .menuBar .menuIcon a {
+      padding: 0 0.3em 0 0.3em; }
+    @media only screen and (max-width: 756px) {
+      .menuBar .menuIcon {
+        display: block; } }
 
 .socialMedia {
   margin-left: auto;
@@ -179,14 +196,38 @@
   box-sizing: border-box;
   display: block;
   background-color: #e2c786;
+  text-decoration: none;
+  color: black;
   height: 200px;
+  padding: 20px;
   flex-basis: 40%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px; }
+  .worksCont:hover .worksImg {
+    transform: scale(1.1); }
   @media only screen and (max-width: 756px) {
     .worksCont {
-      flex-basis: 60%; } }
+      flex-basis: 80%; } }
+
+.worksImg {
+  width: auto;
+  height: 100px;
+  display: block;
+  margin: auto;
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.worksText {
+  margin-top: 10px;
+  text-align: center; }
+  .worksText .wTitle {
+    font-family: "Lato", sans-serif;
+    font-weight: bold; }
+  .worksText .wDesc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em; }
 
 .contactSec {
   padding: 50px 10px 50px 10px; }
@@ -207,6 +248,8 @@
       text-decoration: none;
       box-shadow: 0 0 3px 3px #974C4F;
       color: #F1F1F1; }
+    .contactSec a .contactEmail {
+      font-size: 0.5em; }
 
 * {
   margin: 0; }

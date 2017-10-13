@@ -29,17 +29,22 @@
 .titleText .subtText {
   font-family: $lato;
   font-size: .4em;
+  margin: 5px;
 }
 .titleImg {
   margin-right: auto;
   @media #{$size-change} {
-    flex-basis: 100%;
+    margin: auto;
+    flex-basis: 80%;
     flex-shrink: 0;
     flex-grow: 0;
-    text-align: center;
   }
   img {
     max-height: 500px;
     padding-left: 20px;
+    @media #{$size-change} {
+      padding-left: 0;
+      max-width: 100%;
+    }
   }
 }

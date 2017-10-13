@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+
+    // responsive menu show/hide
+    $('.menuIcon').click(function() {
+        $('.menuBar').toggleClass('responsive');
+        });
+    $('a[href*="#"]').click(function() {
+        if ($('.menuBar').hasClass('responsive')) {
+            $('.menuBar').removeClass('responsive');
+        }
+    });
+
     //smooth scrolling
     $('a[href*="#"]').on('click', function(event) {
 
@@ -50,5 +61,10 @@ $(document).ready(function(){
             }
 
         lastScrollTop = st;
+
+        // for responsive: hides menu if its currently open and you scroll
+        if ($('.menuBar').hasClass('responsive')) {
+            $('.menuBar').removeClass('responsive');
+        }
     }
 });

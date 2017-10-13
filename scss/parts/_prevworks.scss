@@ -10,13 +10,41 @@
     box-sizing: border-box;
     display: block;
     background-color: $beigeBase;
+    text-decoration: none;
+    color: black;
     height: 200px;
+    padding: 20px;
     flex-basis: 40%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 2px;
+    &:hover .worksImg{
+      transform: scale(1.1);
+    }
     @media #{$size-change} {
-      flex-basis: 60%;
+      flex-basis: 80%;
+    }
+  }
+
+  .worksImg {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin: auto;
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .worksText {
+    margin-top: 10px;
+    text-align: center;
+    .wTitle {
+      font-family: $lato;
+      font-weight: bold;
+    }
+    .wDesc {
+      font-family: $opensans;
+      font-size: 0.8em;
     }
   }
   
